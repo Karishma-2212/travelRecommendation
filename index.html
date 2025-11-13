@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBloom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav input[type="text"] {
+      padding: 5px;
+      width: 200px;
+    }
+
+    nav button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .result {
+      margin: 20px auto;
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .place {
+      margin-bottom: 20px;
+    }
+
+    .place img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div>
+      <input type="text" id="searchInput" placeholder="Enter keyword (e.g., beach)">
+      <button onclick="searchPlaces()">Search</button>
+      <button onclick="clearResults()">Reset</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to TravelBloom</h1>
+    <p>Discover your next travel destination!</p>
+
+    <div id="results" class="result"></div>
+  </div>
+
+  <script src="travel_Recommendation.js"></script>
+</body>
+</html>
